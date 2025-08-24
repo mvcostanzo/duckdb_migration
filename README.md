@@ -3,11 +3,11 @@ This utility examines the schemas contained within a list of provided SQL Server
 
 The application requires a config.json file in the root directory with the following information
 
-`
+```
 {
     "server":{
-        "host": "<host name or IP>",
-        "port": "<port>",
+        "host": "<host name or IP>",  
+        "port": "<port>",  
         "drivername": "mssql+pymssql",
         "trusted_connection": "<yes if using Integrated Security>",
         "encrypt": "<yes" or no depending on server configuration>"
@@ -18,4 +18,4 @@ The application requires a config.json file in the root directory with the follo
         "..."
     ]
 }
-`
+```
