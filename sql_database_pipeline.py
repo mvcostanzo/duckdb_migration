@@ -69,7 +69,8 @@ def load_entire_database() -> None:
                 pipeline_name= str.lower(database),
                 destination='duckdb',
                 dataset_name= str.lower(schema),
-                pipelines_dir=r'./.dlt_pipelines'
+                pipelines_dir=r'./.dlt_pipelines', 
+                progress="enlighten"
             )
 
             # Fetch all the tables from the database
